@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo-div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div img{
+    padding: 5px 0;
+    width: 33%; 
+    border-radius: 50px;
+}
+
+.list-item{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.list-item li{
+    list-style: none;
+    padding: 20px 30px;
+}
+
+.list-item li a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-item li a:hover{
+    color: grey;
+}
+
+.right{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+#ser-input{
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* .ser-button{
+    padding: 8px 10px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-top: 5px;
+} */
+
+.background{
+    background: rgba(0, 0, 0, 0.7 ) url(./img/sean-pollock-PhYq704ffdA-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.myfirst-section{
+    height: 100vh;
+    /* display: flex;
+    align-items: center; */
+}
+
+.container{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.first-box{
+    width: 70%;
+    padding: 20px;
+    color: white;
+}
+
+.second-box{
+    width: 30%;
+}
+
+.secondbox-img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.text-big{
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+.text-small{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+button{
+    /* font-size: 18px; */
+    padding: 8px 10px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-top: 5px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.mysecond-sec{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.paras{
+    width: 50%;
+    padding: 80px;
+}
+
+.secondsec-img{
+    width: 30%;
+    padding: 20px;
+}
+
+.secondsec-img img{
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.contact{
+    background-color:lightgray;
+    height: 68vh;
+}
+
+.heading{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form{
+    width: 40%;
+    margin: 20px auto;
+}
+
+.input{
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid antiquewhite;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.submit-button{
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-color: antiquewhite;
+    background-color: blue;
+}
+
+footer{
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+
+    .container{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .first-box{
+        width: 50%;
+        padding: 20px;
+        color: white;
+    }
+    
+    .second-box{
+        width: 50%;
+        margin-right: 2%;
+    }
+
+    .list-item li{
+        padding: 20px 20px;
+    }
+
+    .mysecond-sec{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    
+    .paras{
+        width: 80%;
+        padding: 50px 0px;
+    }
+    
+    .secondsec-img{
+        width: 50%;
+        padding: 20px;
+    }
+    
+    .secondsec-img img{
+        margin-top: 20px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+    
+}
+
+
+
+@media (max-width:765px) {
+    
+    .list-item{
+        flex-direction: column;
+    }
+
+   .navbar{
+    flex-direction: column;
+    height: 400px;
+    transition: all 0.7s ease-out;
+   }
+
+   .right{
+    flex-direction: column;
+    padding-right: 0px;
+   }
+
+   .burger{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+
+   }
+
+   .line{
+    width: 33px;
+    height: 4px;
+    margin: 5px 3px;
+    background-color: white;
+   }
+
+   .h-nav{
+    height: 55px;
+   }
+
+   .v-nav{
+    opacity: 0;
+   }
+
+   .form{
+    width: 60%;
+    margin: 20px auto;
+}
+.contact{
+    height: 90vh;
+}
+
+   
+}
+
+
+
